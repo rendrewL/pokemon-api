@@ -2,6 +2,8 @@
 
 API RESTful desenvolvida em Node.js, Express e TypeScript para gerenciamento de Pokémon, utilizando PostgreSQL como banco de dados e Sequelize como ORM.
 
+O projeto também possui ambiente containerizado e integração contínua para validação automática do código.
+
 O projeto foi desenvolvido como atividade da disciplina de Laboratório de Desenvolvimento Web (LDW).
 
 ## Tecnologias utilizadas
