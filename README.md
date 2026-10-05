@@ -47,26 +47,26 @@ src/
 
 Cada Pokémon possui os seguintes atributos:
 
-| Campo | Tipo | Descrição |
-|---|---|---|
-| id | integer | Identificador do Pokémon |
-| nome | string | Nome do Pokémon |
-| tipo | string | Tipo do Pokémon |
-| nivel | integer | Nível do Pokémon |
-| hp | integer | Pontos de vida |
-| capturado | boolean | Indica se foi capturado |
-| createdAt | date | Data de criação |
-| updatedAt | date | Data da última atualização |
+| Campo     | Tipo    | Descrição                  |
+| --------- | ------- | -------------------------- |
+| id        | integer | Identificador do Pokémon   |
+| nome      | string  | Nome do Pokémon            |
+| tipo      | string  | Tipo do Pokémon            |
+| nivel     | integer | Nível do Pokémon           |
+| hp        | integer | Pontos de vida             |
+| capturado | boolean | Indica se foi capturado    |
+| createdAt | date    | Data de criação            |
+| updatedAt | date    | Data da última atualização |
 
 ## Endpoints
 
-| Método | Endpoint | Descrição |
-|---|---|---|
-| GET | `/pokemons` | Lista todos os Pokémon |
-| GET | `/pokemons/:id` | Busca um Pokémon pelo ID |
-| POST | `/pokemons` | Cadastra um Pokémon |
-| PUT | `/pokemons/:id` | Atualiza um Pokémon |
-| DELETE | `/pokemons/:id` | Exclui um Pokémon |
+| Método | Endpoint        | Descrição                |
+| ------ | --------------- | ------------------------ |
+| GET    | `/pokemons`     | Lista todos os Pokémon   |
+| GET    | `/pokemons/:id` | Busca um Pokémon pelo ID |
+| POST   | `/pokemons`     | Cadastra um Pokémon      |
+| PUT    | `/pokemons/:id` | Atualiza um Pokémon      |
+| DELETE | `/pokemons/:id` | Exclui um Pokémon        |
 
 ## Instalação
 

@@ -7,8 +7,7 @@ const swaggerOptions: swaggerJsdoc.Options = {
     info: {
       title: "Pokémon API",
       version: "1.0.0",
-      description:
-        "API RESTful para cadastro e gerenciamento de Pokémon."
+      description: "API RESTful para cadastro e gerenciamento de Pokémon."
     },
 
     servers: [

@@ -12,22 +12,24 @@ export interface PokemonAttributes {
   updatedAt?: Date;
 }
 
-interface PokemonCreationAttributes
-  extends Optional<PokemonAttributes, "id" | "createdAt" | "updatedAt"> {}
+type PokemonCreationAttributes = Optional<
+  PokemonAttributes,
+  "id" | "createdAt" | "updatedAt"
+>;
 
 class Pokemon
   extends Model<PokemonAttributes, PokemonCreationAttributes>
   implements PokemonAttributes
 {
   declare id: number;
-declare nome: string;
-declare tipo: string;
-declare nivel: number;
-declare hp: number;
-declare capturado: boolean;
+  declare nome: string;
+  declare tipo: string;
+  declare nivel: number;
+  declare hp: number;
+  declare capturado: boolean;
 
-declare readonly createdAt: Date;
-declare readonly updatedAt: Date;
+  declare readonly createdAt: Date;
+  declare readonly updatedAt: Date;
 }
 
 Pokemon.init(

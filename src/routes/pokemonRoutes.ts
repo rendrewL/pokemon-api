@@ -4,7 +4,7 @@ import {
   listarPokemons,
   buscarPokemonPorId,
   atualizarPokemon,
-  deletarPokemon,
+  deletarPokemon
 } from "../controllers/PokemonController.js";
 
 const router = Router();

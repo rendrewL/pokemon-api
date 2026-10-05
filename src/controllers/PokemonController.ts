@@ -57,12 +57,12 @@ export const buscarPokemonPorId = async (
   try {
     const id = Number(req.params.id);
 
-if (!Number.isInteger(id) || id <= 0) {
-  res.status(400).json({
-    message: "ID inválido."
-  });
-  return;
-}
+    if (!Number.isInteger(id) || id <= 0) {
+      res.status(400).json({
+        message: "ID inválido."
+      });
+      return;
+    }
 
     const pokemon = await Pokemon.findByPk(id);
 
@@ -90,12 +90,12 @@ export const atualizarPokemon = async (
   try {
     const id = Number(req.params.id);
 
-if (!Number.isInteger(id) || id <= 0) {
-  res.status(400).json({
-    message: "ID inválido."
-  });
-  return;
-}
+    if (!Number.isInteger(id) || id <= 0) {
+      res.status(400).json({
+        message: "ID inválido."
+      });
+      return;
+    }
     const { nome, tipo, nivel, hp, capturado } = req.body;
 
     const pokemon = await Pokemon.findByPk(id);
@@ -137,14 +137,14 @@ export const deletarPokemon = async (
   res: Response
 ): Promise<void> => {
   try {
- const id = Number(req.params.id);
+    const id = Number(req.params.id);
 
-if (!Number.isInteger(id) || id <= 0) {
-  res.status(400).json({
-    message: "ID inválido."
-  });
-  return;
-}
+    if (!Number.isInteger(id) || id <= 0) {
+      res.status(400).json({
+        message: "ID inválido."
+      });
+      return;
+    }
 
     const pokemon = await Pokemon.findByPk(id);
 
